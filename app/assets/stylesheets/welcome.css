@@ -18,6 +18,11 @@
 	text-shadow: 0.5px 0.5px #2E2E2E;
 }
 
+.about-head {
+	text-align: center;
+	color: #FE9A2E;
+}
+
 .whereimcallingfrom {
 	background-color: #FE9A2E;
 	color: #ffffff;
@@ -36,4 +41,13 @@
 .thesethingsihathwrought {
 	background-color: #848484;
 	color: #ffffff;
+}
+
+.centerplease {
+	text-align: center;
+}
+
+.social-media-logos {
+	height: 50px;
+	width: 50px;
 }
