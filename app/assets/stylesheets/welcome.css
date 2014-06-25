@@ -1,0 +1,39 @@
+.section-row {
+	display: table-row;
+}
+.section-cell {
+		padding: 0px 100px;
+	height: 500px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.whoisthis {	
+	background-image:url('/assets/beehives.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat:no-repeat;	
+	background-attachment:fixed;
+	color: white;
+	text-shadow: 0.5px 0.5px #2E2E2E;
+}
+
+.whereimcallingfrom {
+	background-color: #FE9A2E;
+	color: #ffffff;
+}
+
+.whaticando {
+	background-image:url('/assets/omanifort.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat:no-repeat;	
+	background-attachment:fixed;
+	color: white;
+	text-shadow: 0.5px 0.5px #2E2E2E;
+}
+
+.thesethingsihathwrought {
+	background-color: #848484;
+	color: #ffffff;
+}
