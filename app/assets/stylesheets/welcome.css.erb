@@ -1,26 +1,42 @@
-.section-row {
+.table-row {
 	display: table-row;
 }
+
 .section-cell {
-		padding: 0px 100px;
+	padding: 0px 100px;
 	height: 500px;
 	display: table-cell;
 	vertical-align: middle;
 }
 
+.app-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.globe-cell {
+	padding-left: 50px;
+}
+
+.cart-cell {
+	padding-left: 50px;
+}
+
 .whoisthis {	
-	background-image: url(<%= asset_path 'beehives.jpg' %>);
-	background-position: center;
-	background-size: cover;
-	background-repeat:no-repeat;	
+	background: url(<%= asset_path 'pei.jpg' %>) no-repeat;	
+	background-position: center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	background-attachment:fixed;
 	color: white;
-	text-shadow: 0.5px 0.5px #2E2E2E;
+	text-shadow: 0.5px 0.5px #3B240B;
 }
 
 .about-head {
 	text-align: center;
-	color: #FE9A2E;
+	color: #3B240B;
 }
 
 .whereimcallingfrom {
@@ -29,10 +45,12 @@
 }
 
 .whaticando {
-	background-image: url(<%= asset_path 'omanifort.jpg' %>);
-	background-position: center;
-	background-size: cover;
-	background-repeat:no-repeat;	
+	background: url(<%= asset_path 'omanifort.jpg' %>) no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	background-attachment:fixed;
 	color: white;
 	text-shadow: 0.5px 0.5px #2E2E2E;
@@ -50,4 +68,14 @@
 .social-media-logos {
 	height: 50px;
 	width: 50px;
+}
+
+.app-icons {
+	height: 250px;
+	width: 250px;
+}
+
+.metro-icon {
+	height: 270px;
+	width: 270px;
 }
