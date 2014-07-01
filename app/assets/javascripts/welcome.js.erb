@@ -1,8 +1,10 @@
 $(document).ready(function(){
-	$("#marta").hover(function(){
-		$(this).attr("src", "/assets/marta-icon-text.png");
-	}, function(){
-		$(this).attr("src", "/assets/marta-icon.png");
+	$(document).ready(function(){
+		$("#marta").hover(function(){
+			$(this).attr("src", "<%= asset_path 'marta-icon-text.png' %>");
+		}, function(){
+			$(this).attr("src", "<%= asset_path 'marta-icon.png' %>");
+		});
 	});
 
 	$("#globey").hover(function(){
