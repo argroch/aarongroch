@@ -2,24 +2,41 @@
 	display: table-row;
 }
 
-.section-cell {
-	padding: 0px 100px;
-	height: 500px;
+.table-cell{
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.app-cell {
-	display: table-cell;
-	vertical-align: middle;
+.full-width{
+	width: 100%;
+}
+
+.sectional {
+	padding: 50px 100px;
+	height: 500px;
+}
+
+.apps-table {
+	display: table;
+	width: 100%;
+}
+
+.marta-cell {
+	display: inline-block;
+	text-align: center;
+	width: 33%;
 }
 
 .globe-cell {
-	padding-left: 50px;
+	display: inline-block;
+	text-align: center;
+	width: 33%;
 }
 
 .cart-cell {
-	padding-left: 50px;
+	display: inline-block;
+	text-align: center;
+	width: 33%;
 }
 
 .whoisthis {	
@@ -79,3 +96,44 @@
 	height: 270px;
 	width: 270px;
 }
+
+@media screen and (max-width: 1035px){
+	.about-me{
+		padding-top: 100px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.marta-cell{
+		width: 50%;
+	}
+
+	.globe-cell{
+		width: 49%;
+	}
+	
+	.cart-cell{
+		width:100%;
+	}
+}
+
+@media screen and (max-width: 720px){
+	.marta-cell{
+		width:100%;
+		} 
+	.globe-cell{
+		width:100%;
+		margin-top: 50px;
+	}
+	.cart-cell{
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.sectional {
+		padding: 50px 50px;
+		height: 1000px;
+	}
+}
+
