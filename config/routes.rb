@@ -1,9 +1,22 @@
 Rails.application.routes.draw do
+
+
   get 'welcome/home'
 
-  get 'welcome/apps'
+  get 'tts_apps' => 'welcome#tts_apps', as: :tts_apps
+  get 'welcome/quizzes' => 'welcome#quizzes', as: :quizzes
 
   root 'welcome#home'
+
+  post 'cities/new' => 'cities#new'
+  post 'states/new' => 'states#new'
+
+  get 'cities/youwon' => 'cities#youwon'
+  get 'states/youwon' => 'states#youwon'
+
+
+  resources :states
+  resources :cities
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

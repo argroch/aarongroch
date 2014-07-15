@@ -1,0 +1,20 @@
+<div class="tts-apps">
+		<h1>You did it!</h1>
+		<h3>You named all 50 States!</h3>
+
+		<p>Here they are:</p>
+
+		<div>
+			<% @states.each do |state| %>
+				<%= "#{state.id}. #{state.name}" %><br />
+			<% end %>
+		</div>
+
+		<div>
+				<%= link_to "Take Another Quiz", quizzes_path %>
+		</div>
+</div>
+
+<script>
+document.getElementById("topbar").style.display = "none";
+</script>

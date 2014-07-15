@@ -2,6 +2,9 @@ class WelcomeController < ApplicationController
   def home
   end
 
-  def apps
+  def tts_apps
+  end
+
+  def quizzes
   end
 end
