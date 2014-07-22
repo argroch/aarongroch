@@ -7,12 +7,12 @@
 	<div>
 		<% i = 1 %>
 		<% @cities.each do |city| %>
-			<%= "#{i}. #{city.name}" %><br />
+			<%= "#{i}. #{city.name.capitalize}" %><br />
 			<% i += 1 %>
 		<% end %>
 	</div>
 
-	<div>
+	<div class="martop-20">
 			<%= link_to "Take Another Quiz", quizzes_path %>
 	</div>
 </div>

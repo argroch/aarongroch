@@ -7,12 +7,12 @@
 		<div>
 			<% i = 1 %>
 			<% @states.each do |state| %>
-				<%= "#{state.id}. #{state.name}" %><br />
+				<%= "#{state.id}. #{state.name.capitalize}" %><br />
 				<% i += 1 %>
 			<% end %>
 		</div>
 
-		<div>
+		<div class="martop-20">
 				<%= link_to "Take Another Quiz", quizzes_path %>
 		</div>
 </div>

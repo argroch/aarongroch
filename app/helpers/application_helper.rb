@@ -18,7 +18,7 @@ module ApplicationHelper
 	def correct_loop(user_ans, ans_list)
 		correct = false
 		ans_list.each do |al|
-			if user_ans == al
+			if user_ans.downcase == al.downcase
 				correct = true
 			end
 		end
@@ -28,7 +28,7 @@ module ApplicationHelper
 	def check_for_dup(answer,database)
 		is_dup = false
 		database.each do |d|
-			if answer == d.name
+			if answer.downcase == d.name.downcase
 				is_dup = true
 			end
 		end

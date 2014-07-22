@@ -10,7 +10,7 @@
 
 	<% i = 1 %>
 	<% @cities.each do |city| %>
-		<%= "#{i}. #{city.name}" %><br />
+		<%= "#{i}. #{city.name.capitalize}" %><br />
 		<% i += 1 %>
 	<% end %>
 </div>
