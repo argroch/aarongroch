@@ -8,8 +8,10 @@
 
 	<%= render 'form' %>
 
+	<% i = 1 %>
 	<% @states.each do |state| %>
 		<%= "#{state.id}. #{state.name}" %><br />
+		<% i += 1 %>
 	<% end %>
 </div>
 

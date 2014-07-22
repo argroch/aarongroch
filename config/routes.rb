@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'tts_apps' => 'welcome#tts_apps', as: :tts_apps
   get 'welcome/quizzes' => 'welcome#quizzes', as: :quizzes
 
+  get 'fancypants' => 'welcome#fancypants'
+
   root 'welcome#home'
 
   post 'cities/new' => 'cities#new'

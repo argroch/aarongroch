@@ -6,5 +6,10 @@ class WelcomeController < ApplicationController
   end
 
   def quizzes
+  	City.delete_all
+  	State.delete_all
+  end
+
+  def fancypants
   end
 end

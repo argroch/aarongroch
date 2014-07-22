@@ -5,8 +5,10 @@
 	<p>Here they are:</p>
 
 	<div>
+		<% i = 1 %>
 		<% @cities.each do |city| %>
-			<%= "#{city.id}. #{city.name}" %><br />
+			<%= "#{i}. #{city.name}" %><br />
+			<% i += 1 %>
 		<% end %>
 	</div>
 

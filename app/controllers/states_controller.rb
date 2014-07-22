@@ -50,7 +50,7 @@ class StatesController < ApplicationController
         format.html { redirect_to new_state_path, notice: 'State was successfully created.' }
         format.json { render action: 'show', status: :created, location: @state }
       elsif @states.count == 49 && correct == true && is_dup == false && @state.save
-        format.html { redirect_to youwon_path, notice: 'State was successfully created.' }
+        format.html { redirect_to states_youwon_path, notice: 'State was successfully created.' }
         format.json { render action: 'show', status: :created, location: @state }
       else
         format.html { render action: 'new' }
