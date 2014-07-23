@@ -10,6 +10,6 @@ class WelcomeController < ApplicationController
   	State.delete_all
   end
 
-  def fancypants
+  def myresume
   end
 end

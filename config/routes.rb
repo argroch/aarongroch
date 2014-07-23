@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'tts_apps' => 'welcome#tts_apps', as: :tts_apps
   get 'welcome/quizzes' => 'welcome#quizzes', as: :quizzes
 
-  get 'fancypants' => 'welcome#fancypants'
+  get 'myresume' => 'welcome#myresume', as: :myresume
 
   root 'welcome#home'
 
