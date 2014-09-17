@@ -31,19 +31,7 @@
         <li class="active menu-pad"><a href="#about">Who I Am</a></li>
         <li class="menu-pad"><a href="#background">My Background</a></li>
         <li class="menu-pad"><a href="#webdesign">Web Design &amp; Development</a></li>
-        <li class="menu-pad"><a href="#sampapps">Web Apps</a></li>
-
-<!--         <li class="dropdown menu-pad">
-          <a href="#sampapps" class="dropdown-toggle" data-toggle="dropdown">Web Apps <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Your Bus Is Coming</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Sell It to Me</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Fun (?) With JavaScript</a></li>
-          </ul>
-        </li>
- -->      
+        <li class="menu-pad"><a href="#sampapps">Web Apps</a></li>     
       </ul>
 
     </div>
@@ -51,6 +39,18 @@
 </nav>
 
 <%= yield %>
+
+<footer>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54886239-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</footer>
 
 </body>
 </html>
