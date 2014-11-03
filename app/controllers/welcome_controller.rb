@@ -12,4 +12,8 @@ class WelcomeController < ApplicationController
 
   def myresume
   end
+
+  def andys_birthday
+
+  end
 end

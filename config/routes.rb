@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'welcome/quizzes' => 'welcome#quizzes', as: :quizzes
 
   get 'myresume' => 'welcome#myresume', as: :myresume
+  get 'andys_birthtday' => 'welcome#andys_birthtday', as: :andys_birthtday
 
   root 'welcome#home'
 
