@@ -1,3 +1,47 @@
-<p>Birthday-Bot has been working all night, calculating the most hilarious birthday message possible.</p>
+<div class="birthday">
+	<div class="centerplease">
+	<div class="knifebot"></div>
+</div>
+	<div class="centerplease">
+		<p>Birthday-Bot has been working all night, calculating the most hilarious birthday messages possible.</p>
+	</div>
+	<div class="result-button centerplease"> 
 
-<button type="button" class="btn btn-default">Click Here For Result</button>
+		<div class="last-joke" style="visibility:hidden;">
+			<%= @joke %><br />
+			<code><%= @robot_responses.sample %></code>
+		</div>
+		<div class="click-for-result">
+			<button type="button" class="btn btn-danger push-me">Click Here For Result</button>
+		</div>
+
+		<div class="actual-result" style="visibility:hidden;">
+			<%= @joke %><br />
+			<code><%= @robot_responses.sample %></code><br />
+			<button type="button" class="btn btn-danger push-me-also">Click For Another</button>
+		</div>
+
+		<div class="next-result" style="visibility:hidden;">
+			<%= @joke %><br />
+			<code><%= @robot_responses.sample %></code><br />
+			<button type="button" class="btn btn-danger one-last-time">Click For Another</button>
+		</div>
+
+	</div>
+<script>
+$('.push-me').click(function(){ 
+	$('.click-for-result').css('visibility', 'hidden');
+	$('.actual-result').css('visibility', 'visibile');
+	$('.last-joke').css('visibility', 'hidden');
+});
+$('.push-me-also').click(function(){
+	$('.actual-result').css('visibility', 'hidden');
+	$('.next-result').css('visibility', 'visibile');
+});
+$('.one-last-time').click(function(){
+	$('.next-result').css('visibility', 'hidden');
+	$('.click-for-result').css('visibility', 'visibile');
+	$('.last-joke').css('visibility', 'visibile');
+});
+document.getElementById("topbar").style.display = "none";
+</script>
