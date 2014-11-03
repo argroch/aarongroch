@@ -8,7 +8,7 @@
 	<div class="result-button centerplease"> 
 
 		<div class="last-joke" style="visibility:hidden;">
-			<%= @joke %><br />
+			<%= @binary_array.shuffle().join("") %><br />
 			<code><%= @robot_responses.sample %></code>
 		</div>
 		<div class="click-for-result">
@@ -16,13 +16,13 @@
 		</div>
 
 		<div class="actual-result" style="visibility:hidden;">
-			<%= @joke %><br />
+			<%= @binary_array.shuffle().join("") %><br />
 			<code><%= @robot_responses.sample %></code><br />
 			<button type="button" class="btn btn-danger push-me-also">Click For Another</button>
 		</div>
 
 		<div class="next-result" style="visibility:hidden;">
-			<%= @joke %><br />
+			<%= @binary_array.shuffle().join("") %><br />
 			<code><%= @robot_responses.sample %></code><br />
 			<button type="button" class="btn btn-danger one-last-time">Click For Another</button>
 		</div>
